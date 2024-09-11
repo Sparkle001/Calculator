@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  background-color: rgb(102, 223, 231);
+}
+.heading {
+  display: inline-block;
+  background-color: teal;
+  width: 380px;
+  margin: 40px 0px 10px 0px;
+  border-radius: 10px;
+}
+p.calc {
+  display: inline;
+  margin-right: 100px;
+  color: white;
+  font-size: 25px;
+  font-weight: bolder;
+}
+label {
+  color: white;
+}
+input.inputbox {
+  pointer-events: none;
+}
+.inputbox {
+  text-align: end;
+  color: white;
+  outline: none;
+  border: none;
+  width: 380px;
+  height: 100px;
+  font-size: 30px;
+  border-bottom: 3px solid rgb(118, 150, 255);
+  /* margin-bottom: 20px; */
+  border-radius: 20px 20px 0px 0px;
+  background-color: teal;
+}
+.table {
+  display: inline-block;
+  background-color: teal;
+  padding: 20px;
+  width: 380px;
+  border-radius: 0px 0px 20px 20px;
+}
+table {
+  display: inline;
+}
+button {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 3px grey;
+  font-size: 18px;
+  width: 80px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.symbols {
+  background-color: rgb(167, 197, 238);
+}
+.specialKeys {
+  background-color: rgb(102, 223, 231);
+}

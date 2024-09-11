@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading" id="heading">
+            <form id="header">
+                <p class="calc">calculator</p>
+                <label>THEME</label>
+                <input type="radio" name="1" id="radio1" checked>
+                <input type="radio" name="1" id="radio2">
+                <input type="radio" name="1" id="radio3">
+            </form>
+        </div>
+        <div class="input">
+            <input type="text" name="" id="inputfield" class="inputbox">
+        </div>
+        <div class="table" id="calculator">
+            <table>
+                <tr>
+                    <td><button id="switch" class="specialKeys">ON</button></td>
+                    <td><button id="answer" class="specialKeys" onclick="showPreviousAnswer()">ANS</button></td>
+                    <td><button id="bcksp" class="specialKeys">DEL</button></td>
+                    <td colspan="1"><button class="specialKeys" id="clear">AC</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="appendToDisplay('7')">7</button></td>
+                    <td><button onclick="appendToDisplay('8')">8</button></td>
+                    <td><button onclick="appendToDisplay('9')">9</button></td>
+                    <td><button class="symbols" onclick="appendToDisplay('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="appendToDisplay('4')">4</button></td>
+                    <td><button onclick="appendToDisplay('5')">5</button></td>
+                    <td><button onclick="appendToDisplay('6')">6</button></td>
+                    <td><button class="symbols" onclick="appendToDisplay('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="appendToDisplay('1')">1</button></td>
+                    <td><button onclick="appendToDisplay('2')">2</button></td>
+                    <td><button onclick="appendToDisplay('3')">3</button></td>
+                    <td><button class="symbols" onclick="appendToDisplay('*')">&times;</button></td>
+                </tr>
+                <tr>
+                    <td><button class="symbols" onclick="appendToDisplay('.')">.</button></td>
+                    <td><button onclick="appendToDisplay('0')">0</button></td>
+                    <td><button class="symbols" onclick="appendToDisplay('/')">/</button></td>
+                    <td colspan="1"><button class="symbols" id="equal" onclick="calculate()">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+
+</html>
